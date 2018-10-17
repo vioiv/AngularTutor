@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			function argumentsES6(family, ...userDetails){
+				console.log(family);
+				userDetails.forEach(function(userDetail){
+					console.log(userDetail);
+				})
+			}
+
+			argumentsES6('KIM','JeongHoon','39','1980')
+		</script>
+	</body>
+</html>
