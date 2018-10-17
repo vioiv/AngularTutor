@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			function ThisTest(name){
+				this.name = name;
+				setInterval(() => {
+					console.log(this.name);
+				}, 1000
+				);
+			}
+
+			var thisTest = new ThisTest('KIM');
+		</script>
+	</body>
+</html>
