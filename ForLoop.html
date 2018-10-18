@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			console.log('<forEach Start>');
+			var numbers = [1,2,3,4];
+			numbers.description = 'four numbers';
+			numbers.forEach((n) => console.log(n));
+			console.log('<forEach End>');
+
+			console.log('<forIn Start>');
+			for(let n in numbers){
+				console.log(n);
+			}
+			console.log('<forIn End>');
+
+			console.log('<forIn values Start>');
+			for(let n in numbers){
+				console.log(numbers[n]);
+			}
+			console.log('<forIn values End>');
+
+			console.log('<forOf Start>');
+			for(let n of numbers){
+				console.log(n);
+			}
+			console.log('<forOf End>');
+
+		</script>
+	</body>
+</html>
