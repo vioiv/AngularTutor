@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			function* getValue(){
+				console.log('Start');
+				yield;
+				console.log('Resume');
+			}
+
+			var iterator = getValue();
+			iterator.next();
+
+			console.log('1');
+			console.log('2');
+			console.log('3');
+			
+			iterator.next();
+		</script>
+	</body>
+</html>
