@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			"use strict";
+			class Car {
+				constructor(type){
+					this.type = type;
+				}
+
+				name(){
+					console.log('Car');
+				}
+
+				tire(){
+					console.log('car tire');
+					return 4;
+				}
+			}
+
+			class Truck extends Car{
+				constructor(type, size){
+					super(type);
+					this.size = size;
+				}
+
+				company(){
+					console.log('GM');
+				}
+
+				tire(){
+					super.tire();
+					console.log('Normal tire');
+				}
+			}
+
+			var truck = new Truck('truck', 20);
+			truck.name();
+			truck.company();
+			truck.tire();
+		</script>
+	</body>
+</html>
