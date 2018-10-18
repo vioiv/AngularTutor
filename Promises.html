@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="text/javascript">
+			function getUsers(){
+				return new Promise(
+					function(resolve, reject){
+						setTimeout(function(){
+							if(false){
+								resolve('KIM');
+							} else{
+								reject('Lee');
+							}
+						}, 1000);
+					}
+				);
+			}
+
+			let promise = getUsers()
+				.then((usr) => console.log(`then ${usr}`))
+				.catch((err) => console.log(`catch ${err}`));
+
+			console.log('START');
+		</script>
+	</body>
+</html>
